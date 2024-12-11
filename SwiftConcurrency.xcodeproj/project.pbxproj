@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA29D4492D0A4D6400448612 /* DownloadImageAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA29D4482D0A4D6400448612 /* DownloadImageAsync.swift */; };
 		FAE9F6CC2D099A8E009EB5B1 /* SwiftConcurrencyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE9F6CB2D099A8E009EB5B1 /* SwiftConcurrencyApp.swift */; };
 		FAE9F6CE2D099A8E009EB5B1 /* DoTryCatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE9F6CD2D099A8E009EB5B1 /* DoTryCatch.swift */; };
 		FAE9F6D02D099A8F009EB5B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAE9F6CF2D099A8F009EB5B1 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA29D4482D0A4D6400448612 /* DownloadImageAsync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadImageAsync.swift; sourceTree = "<group>"; };
 		FAE9F6C82D099A8E009EB5B1 /* SwiftConcurrency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftConcurrency.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAE9F6CB2D099A8E009EB5B1 /* SwiftConcurrencyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftConcurrencyApp.swift; sourceTree = "<group>"; };
 		FAE9F6CD2D099A8E009EB5B1 /* DoTryCatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoTryCatch.swift; sourceTree = "<group>"; };
@@ -52,6 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				FAE9F6CB2D099A8E009EB5B1 /* SwiftConcurrencyApp.swift */,
+				FA29D4482D0A4D6400448612 /* DownloadImageAsync.swift */,
 				FAE9F6CD2D099A8E009EB5B1 /* DoTryCatch.swift */,
 				FAE9F6CF2D099A8F009EB5B1 /* Assets.xcassets */,
 				FAE9F6D12D099A8F009EB5B1 /* Preview Content */,
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAE9F6CE2D099A8E009EB5B1 /* DoTryCatch.swift in Sources */,
+				FA29D4492D0A4D6400448612 /* DownloadImageAsync.swift in Sources */,
 				FAE9F6CC2D099A8E009EB5B1 /* SwiftConcurrencyApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
