@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FAE9F6CC2D099A8E009EB5B1 /* SwiftConcurrencyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE9F6CB2D099A8E009EB5B1 /* SwiftConcurrencyApp.swift */; };
-		FAE9F6CE2D099A8E009EB5B1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE9F6CD2D099A8E009EB5B1 /* ContentView.swift */; };
+		FAE9F6CE2D099A8E009EB5B1 /* DoTryCatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE9F6CD2D099A8E009EB5B1 /* DoTryCatch.swift */; };
 		FAE9F6D02D099A8F009EB5B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAE9F6CF2D099A8F009EB5B1 /* Assets.xcassets */; };
 		FAE9F6D32D099A8F009EB5B1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAE9F6D22D099A8F009EB5B1 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -16,7 +16,7 @@
 /* Begin PBXFileReference section */
 		FAE9F6C82D099A8E009EB5B1 /* SwiftConcurrency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftConcurrency.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAE9F6CB2D099A8E009EB5B1 /* SwiftConcurrencyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftConcurrencyApp.swift; sourceTree = "<group>"; };
-		FAE9F6CD2D099A8E009EB5B1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FAE9F6CD2D099A8E009EB5B1 /* DoTryCatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoTryCatch.swift; sourceTree = "<group>"; };
 		FAE9F6CF2D099A8F009EB5B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAE9F6D22D099A8F009EB5B1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -52,7 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				FAE9F6CB2D099A8E009EB5B1 /* SwiftConcurrencyApp.swift */,
-				FAE9F6CD2D099A8E009EB5B1 /* ContentView.swift */,
+				FAE9F6CD2D099A8E009EB5B1 /* DoTryCatch.swift */,
 				FAE9F6CF2D099A8F009EB5B1 /* Assets.xcassets */,
 				FAE9F6D12D099A8F009EB5B1 /* Preview Content */,
 			);
@@ -137,7 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAE9F6CE2D099A8E009EB5B1 /* ContentView.swift in Sources */,
+				FAE9F6CE2D099A8E009EB5B1 /* DoTryCatch.swift in Sources */,
 				FAE9F6CC2D099A8E009EB5B1 /* SwiftConcurrencyApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
