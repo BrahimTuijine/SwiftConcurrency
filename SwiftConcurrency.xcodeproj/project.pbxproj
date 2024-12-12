@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FA29D4492D0A4D6400448612 /* DownloadImageAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA29D4482D0A4D6400448612 /* DownloadImageAsync.swift */; };
+		FA8533062D0B9EE200F89F6D /* TaskScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8533052D0B9EE200F89F6D /* TaskScreen.swift */; };
 		FAC95E5C2D0B32D100789C7B /* AsyncAwaitBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC95E5B2D0B32D100789C7B /* AsyncAwaitBootcamp.swift */; };
 		FAE9F6CC2D099A8E009EB5B1 /* SwiftConcurrencyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE9F6CB2D099A8E009EB5B1 /* SwiftConcurrencyApp.swift */; };
 		FAE9F6CE2D099A8E009EB5B1 /* DoTryCatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE9F6CD2D099A8E009EB5B1 /* DoTryCatch.swift */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		FA29D4482D0A4D6400448612 /* DownloadImageAsync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadImageAsync.swift; sourceTree = "<group>"; };
+		FA8533052D0B9EE200F89F6D /* TaskScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskScreen.swift; sourceTree = "<group>"; };
 		FAC95E5B2D0B32D100789C7B /* AsyncAwaitBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncAwaitBootcamp.swift; sourceTree = "<group>"; };
 		FAE9F6C82D099A8E009EB5B1 /* SwiftConcurrency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftConcurrency.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAE9F6CB2D099A8E009EB5B1 /* SwiftConcurrencyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftConcurrencyApp.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 			children = (
 				FAE9F6CB2D099A8E009EB5B1 /* SwiftConcurrencyApp.swift */,
 				FAC95E5B2D0B32D100789C7B /* AsyncAwaitBootcamp.swift */,
+				FA8533052D0B9EE200F89F6D /* TaskScreen.swift */,
 				FA29D4482D0A4D6400448612 /* DownloadImageAsync.swift */,
 				FAE9F6CD2D099A8E009EB5B1 /* DoTryCatch.swift */,
 				FAE9F6CF2D099A8F009EB5B1 /* Assets.xcassets */,
@@ -146,6 +149,7 @@
 				FAC95E5C2D0B32D100789C7B /* AsyncAwaitBootcamp.swift in Sources */,
 				FAE9F6CE2D099A8E009EB5B1 /* DoTryCatch.swift in Sources */,
 				FA29D4492D0A4D6400448612 /* DownloadImageAsync.swift in Sources */,
+				FA8533062D0B9EE200F89F6D /* TaskScreen.swift in Sources */,
 				FAE9F6CC2D099A8E009EB5B1 /* SwiftConcurrencyApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
