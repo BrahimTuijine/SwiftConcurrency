@@ -66,6 +66,9 @@ struct TaskScreen: View {
               ProgressView()
             }
         }
+        .onDisappear{
+            fetchImageTask?.cancel()
+        }
         .onAppear {
             fetchImageTask = Task {
                 await vm.fetchImage()
