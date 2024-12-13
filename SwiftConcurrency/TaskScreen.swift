@@ -51,7 +51,7 @@ struct TaskScreenHomeView : View {
 struct TaskScreen: View {
     
     @StateObject private var vm = TaskScreenViewModel()
-    @State private var fetchImageTask: Task<Void, Never>?
+//    @State private var fetchImageTask: Task<Void, Never>?
     
     var body: some View {
         VStack {
@@ -66,14 +66,17 @@ struct TaskScreen: View {
               ProgressView()
             }
         }
-        .onDisappear{
-            fetchImageTask?.cancel()
+        .task {
+            await vm.fetchImage()
         }
-        .onAppear {
-            fetchImageTask = Task {
-                await vm.fetchImage()
-                
-            }
+//        .onDisappear{
+//            fetchImageTask?.cancel()
+//        }
+//        .onAppear {
+//            fetchImageTask = Task {
+//                await vm.fetchImage()
+//                
+//            }
 //            Task {
 //                await vm.fetchImage2()
 //            }
@@ -105,7 +108,7 @@ struct TaskScreen: View {
             
             
              
-        }
+//        }
     }
 }
 
