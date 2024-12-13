@@ -21,15 +21,18 @@ class TaskGroupDataManager {
     }
     
     func fetchImagesWithTaskGroup() async throws -> [UIImage] {
-        try await withThrowingTaskGroup(of: UIImage.self) { group in
+        try await withThrowingTaskGroup(of: UIImage?.self) { group in
             var images: [UIImage] = []
+            images.reserveCapacity(10)
             
             for _ in (0..<10) {
-                group.addTask { try await self.fetchImage() }
+                group.addTask { try? await self.fetchImage() }
             }
             
             for try await image in group {
-                images.append(image)
+                if let image = image {
+                    images.append(image)
+                }
             }
             
             return images
