@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA02E70D2D0CEBF500AF7D9D /* TaskGroupScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA02E70C2D0CEBF500AF7D9D /* TaskGroupScreen.swift */; };
 		FA29D4492D0A4D6400448612 /* DownloadImageAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA29D4482D0A4D6400448612 /* DownloadImageAsync.swift */; };
 		FA8533062D0B9EE200F89F6D /* TaskScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8533052D0B9EE200F89F6D /* TaskScreen.swift */; };
 		FAA56D142D0C80720011FF02 /* AsyncLetScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA56D132D0C80720011FF02 /* AsyncLetScreen.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA02E70C2D0CEBF500AF7D9D /* TaskGroupScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskGroupScreen.swift; sourceTree = "<group>"; };
 		FA29D4482D0A4D6400448612 /* DownloadImageAsync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadImageAsync.swift; sourceTree = "<group>"; };
 		FA8533052D0B9EE200F89F6D /* TaskScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskScreen.swift; sourceTree = "<group>"; };
 		FAA56D132D0C80720011FF02 /* AsyncLetScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncLetScreen.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				FA8533052D0B9EE200F89F6D /* TaskScreen.swift */,
 				FAA56D132D0C80720011FF02 /* AsyncLetScreen.swift */,
 				FA29D4482D0A4D6400448612 /* DownloadImageAsync.swift */,
+				FA02E70C2D0CEBF500AF7D9D /* TaskGroupScreen.swift */,
 				FAE9F6CD2D099A8E009EB5B1 /* DoTryCatch.swift */,
 				FAE9F6CF2D099A8F009EB5B1 /* Assets.xcassets */,
 				FAE9F6D12D099A8F009EB5B1 /* Preview Content */,
@@ -153,6 +156,7 @@
 				FAC95E5C2D0B32D100789C7B /* AsyncAwaitBootcamp.swift in Sources */,
 				FAE9F6CE2D099A8E009EB5B1 /* DoTryCatch.swift in Sources */,
 				FA29D4492D0A4D6400448612 /* DownloadImageAsync.swift in Sources */,
+				FA02E70D2D0CEBF500AF7D9D /* TaskGroupScreen.swift in Sources */,
 				FA8533062D0B9EE200F89F6D /* TaskScreen.swift in Sources */,
 				FAE9F6CC2D099A8E009EB5B1 /* SwiftConcurrencyApp.swift in Sources */,
 			);
