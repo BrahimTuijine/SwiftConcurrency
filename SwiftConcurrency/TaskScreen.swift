@@ -12,10 +12,12 @@ class TaskScreenViewModel: ObservableObject {
     @Published var image2: UIImage?
     
     func fetchImage() async -> Void {
+        try? await Task.sleep(nanoseconds: 5_000_000_000)
         do {
             guard let url = URL(string: "https://picsum.photos/200") else { return }
-            let (data , response) = try await URLSession.shared.data(from: url)
+            let (data , _) = try await URLSession.shared.data(from: url)
             await MainActor.run {
+                print("image returned Successfully")
                 self.image = UIImage(data: data)
             }
         } catch {
@@ -26,7 +28,7 @@ class TaskScreenViewModel: ObservableObject {
     func fetchImage2() async -> Void {
         do {
             guard let url = URL(string: "https://picsum.photos/200") else { return }
-            let (data , response) = try await URLSession.shared.data(from: url)
+            let (data , _) = try await URLSession.shared.data(from: url)
             await MainActor.run {
                 self.image2 = UIImage(data: data)
             }
@@ -36,9 +38,20 @@ class TaskScreenViewModel: ObservableObject {
     }
 }
 
+struct TaskScreenHomeView : View {
+    var body: some View {
+        NavigationStack {
+            NavigationLink("Click me !") {
+                TaskScreen()
+            }
+        }
+    }
+}
+
 struct TaskScreen: View {
     
     @StateObject private var vm = TaskScreenViewModel()
+    @State private var fetchImageTask: Task<Void, Never>?
     
     var body: some View {
         VStack {
@@ -54,13 +67,41 @@ struct TaskScreen: View {
             }
         }
         .onAppear {
-            Task {
+            fetchImageTask = Task {
                 await vm.fetchImage()
                 
             }
-            Task {
-                await vm.fetchImage2()
-            }
+//            Task {
+//                await vm.fetchImage2()
+//            }
+            
+//            Task(priority: .userInitiated) {
+//                print("userInitiated:  \(Task.currentPriority.rawValue)")
+//            }
+//            
+//            Task(priority: .high) {
+//                await Task.yield() 
+//                print("high :  \(Task.currentPriority.rawValue)")
+//            }
+//            
+//            Task(priority: .medium) {
+//                print ("medium :  \(Task.currentPriority.rawValue)")
+//            }
+//            
+//            Task(priority: .low) {
+//                print("low :  \(Task.currentPriority.rawValue)")
+//            }
+//            
+//            Task(priority: .utility) {
+//                print("utility:  \(Task.currentPriority.rawValue)")
+//            }
+//            
+//            Task(priority: .background) {
+//                print ("background:  \(Task.currentPriority.rawValue)")
+//            }
+            
+            
+             
         }
     }
 }
