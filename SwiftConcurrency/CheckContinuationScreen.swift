@@ -34,8 +34,19 @@ class CheckContinuationScreenNetworkManager {
                 }
             }.resume()
         }
-        
-        
+    }
+    
+    func getHeartImageFromDatabase() async throws -> UIImage {
+        return try await withCheckedThrowingContinuation { continuation in
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                if let image =  UIImage(systemName: "heart.fill") {
+                    continuation.resume(returning: image)
+                } else {
+                    continuation.resume(throwing: URLError(.badURL))
+                }
+                
+            }
+        }
     }
 }
 
@@ -53,6 +64,11 @@ class CheckContinuationScreenViewModel: ObservableObject {
             print(error)
         }
     }
+    
+    func getHeartImage() async -> Void {
+        let image = try? await networkManager.getHeartImageFromDatabase()
+        self.image = image
+    }
 }
 
 struct CheckContinuationScreen: View {
@@ -63,12 +79,15 @@ struct CheckContinuationScreen: View {
         ZStack {
             if let image = vm.image {
                 Image(uiImage: image)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 200, height: 200)
             } else {
                 ProgressView()
             }
         }
         .task {
-            await vm.getImage()
+            await vm.getHeartImage()
         }
     }
 }
