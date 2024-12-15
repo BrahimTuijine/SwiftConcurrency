@@ -20,15 +20,34 @@ struct MyStruct {
     var title: String
 }
 
+struct MyClass {
+    var title: String
+    
+    init(title: String) {
+        self.title = title
+    }
+}
+
 extension StructClassActorScreen {
     
     private func runTest() {
         print("test started")
-        structTest1()
+        classTest1()
     }
     
     private func structTest1() -> Void {
         let objectA = MyStruct(title: "starting title")
+        print("objectA :", objectA.title)
+        var objectB = objectA
+        print("objectB :", objectB.title)
+        
+        objectB.title = "Second title!"
+        print ("ObjectA:", objectA.title)
+        print ("ObjectB:", objectB.title)
+    }
+    
+    private func classTest1() {
+        let objectA = MyClass(title: "starting title")
         print("objectA :", objectA.title)
         var objectB = objectA
         print("objectB :", objectB.title)
