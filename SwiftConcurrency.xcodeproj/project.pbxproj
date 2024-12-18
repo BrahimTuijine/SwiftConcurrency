@@ -11,6 +11,7 @@
 		FA181F0E2D0F91CA001D2631 /* StructClassActorScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA181F0D2D0F91CA001D2631 /* StructClassActorScreen.swift */; };
 		FA1AAC1C2D0D8D4F0059AC2B /* CheckContinuationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1AAC1B2D0D8D4F0059AC2B /* CheckContinuationScreen.swift */; };
 		FA29D4492D0A4D6400448612 /* DownloadImageAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA29D4482D0A4D6400448612 /* DownloadImageAsync.swift */; };
+		FA34A9102D13870900BB74BE /* ActorsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA34A90F2D13870900BB74BE /* ActorsScreen.swift */; };
 		FA8533062D0B9EE200F89F6D /* TaskScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8533052D0B9EE200F89F6D /* TaskScreen.swift */; };
 		FAA56D142D0C80720011FF02 /* AsyncLetScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA56D132D0C80720011FF02 /* AsyncLetScreen.swift */; };
 		FAC95E5C2D0B32D100789C7B /* AsyncAwaitBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC95E5B2D0B32D100789C7B /* AsyncAwaitBootcamp.swift */; };
@@ -25,6 +26,7 @@
 		FA181F0D2D0F91CA001D2631 /* StructClassActorScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructClassActorScreen.swift; sourceTree = "<group>"; };
 		FA1AAC1B2D0D8D4F0059AC2B /* CheckContinuationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckContinuationScreen.swift; sourceTree = "<group>"; };
 		FA29D4482D0A4D6400448612 /* DownloadImageAsync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadImageAsync.swift; sourceTree = "<group>"; };
+		FA34A90F2D13870900BB74BE /* ActorsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorsScreen.swift; sourceTree = "<group>"; };
 		FA8533052D0B9EE200F89F6D /* TaskScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskScreen.swift; sourceTree = "<group>"; };
 		FAA56D132D0C80720011FF02 /* AsyncLetScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncLetScreen.swift; sourceTree = "<group>"; };
 		FAC95E5B2D0B32D100789C7B /* AsyncAwaitBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncAwaitBootcamp.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 				FA29D4482D0A4D6400448612 /* DownloadImageAsync.swift */,
 				FA02E70C2D0CEBF500AF7D9D /* TaskGroupScreen.swift */,
 				FAE9F6CD2D099A8E009EB5B1 /* DoTryCatch.swift */,
+				FA34A90F2D13870900BB74BE /* ActorsScreen.swift */,
 				FAE9F6CF2D099A8F009EB5B1 /* Assets.xcassets */,
 				FAE9F6D12D099A8F009EB5B1 /* Preview Content */,
 			);
@@ -165,6 +168,7 @@
 				FA29D4492D0A4D6400448612 /* DownloadImageAsync.swift in Sources */,
 				FA181F0E2D0F91CA001D2631 /* StructClassActorScreen.swift in Sources */,
 				FA02E70D2D0CEBF500AF7D9D /* TaskGroupScreen.swift in Sources */,
+				FA34A9102D13870900BB74BE /* ActorsScreen.swift in Sources */,
 				FA8533062D0B9EE200F89F6D /* TaskScreen.swift in Sources */,
 				FAE9F6CC2D099A8E009EB5B1 /* SwiftConcurrencyApp.swift in Sources */,
 			);
