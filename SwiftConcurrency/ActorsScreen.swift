@@ -25,9 +25,23 @@ class MyDataManager {
     }
 }
 
+actor MyActorDataManager {
+    
+    static let instance = MyActorDataManager()
+    private init() {}
+    
+    var data: [String] = []
+    
+    func getRandomData() -> String? {
+        self.data.append(UUID().uuidString)
+        print(Thread.current.isMainThread)
+        return data.randomElement()
+    }
+}
+
 struct HomeView: View {
     
-    let dataManager = MyDataManager.instance
+    let dataManager = MyActorDataManager.instance
     @State private var text: String = ""
     let timer = Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()
     
@@ -38,22 +52,31 @@ struct HomeView: View {
                 .font(.headline)
         }
         .onReceive(timer, perform: {  _ in
-            DispatchQueue.global(qos: .background).async {
-                dataManager.getRandomData { title in
-                    if let data = title {
-                        DispatchQueue.main.async {
-                            self.text = data
-                        }
+            
+            Task {
+                if let data = await dataManager.getRandomData() {
+                    await MainActor.run {
+                        self.text = data
                     }
                 }
             }
+            
+//            DispatchQueue.global(qos: .background).async {
+//                dataManager.getRandomData { title in
+//                    if let data = title {
+//                        DispatchQueue.main.async {
+//                            self.text = data
+//                        }
+//                    }
+//                }
+//            }
         })
     }
 }
 
 struct BrowseView: View {
     
-    let dataManager = MyDataManager.instance
+    let dataManager = MyActorDataManager.instance
     @State private var text: String = ""
     let timer = Timer.publish(every: 0.01, on: .main, in: .common).autoconnect()
     
@@ -67,15 +90,24 @@ struct BrowseView: View {
             
         }
         .onReceive(timer, perform: {  _ in
-            DispatchQueue.global(qos: .default).async {
-                dataManager.getRandomData { title in
-                    if let data = title {
-                        DispatchQueue.main.async {
-                            self.text = data
-                        }
+            
+            Task {
+                if let data = await dataManager.getRandomData() {
+                    await MainActor.run {
+                        self.text = data
                     }
                 }
             }
+            
+//            DispatchQueue.global(qos: .default).async {
+//                dataManager.getRandomData { title in
+//                    if let data = title {
+//                        DispatchQueue.main.async {
+//                            self.text = data
+//                        }
+//                    }
+//                }
+//            }
         })
     }
     
