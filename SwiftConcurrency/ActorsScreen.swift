@@ -23,6 +23,7 @@ class MyDataManager {
             completionHandler(self.data.randomElement())
         }
     }
+    
 }
 
 actor MyActorDataManager {
@@ -37,6 +38,10 @@ actor MyActorDataManager {
         print(Thread.current.isMainThread)
         return data.randomElement()
     }
+    
+    nonisolated func getSavedData() -> String {
+        return "new Data"
+    }
 }
 
 struct HomeView: View {
@@ -50,6 +55,9 @@ struct HomeView: View {
             Color.gray.opacity(0.8).ignoresSafeArea()
             Text(text)
                 .font(.headline)
+        }
+        .onAppear {
+            let newString = dataManager.getSavedData()
         }
         .onReceive(timer, perform: {  _ in
             
