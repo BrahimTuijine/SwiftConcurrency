@@ -33,6 +33,8 @@ actor MyActorDataManager {
     
     var data: [String] = []
     
+    nonisolated let myRandomText = "just random text"
+    
     func getRandomData() -> String? {
         self.data.append(UUID().uuidString)
         print(Thread.current.isMainThread)
@@ -58,6 +60,7 @@ struct HomeView: View {
         }
         .onAppear {
             let newString = dataManager.getSavedData()
+            let randomVar = dataManager.myRandomText
         }
         .onReceive(timer, perform: {  _ in
             
