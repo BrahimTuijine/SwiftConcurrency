@@ -20,7 +20,7 @@ struct UserInfo: Sendable {
 
 final class MyClassUserInfo: @unchecked Sendable {
     
-    var name: String
+    private var name: String
     let queue = DispatchQueue(label: "com.MyApp.MyClassUserInfo")
     
     
