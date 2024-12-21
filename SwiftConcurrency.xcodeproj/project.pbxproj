@@ -20,6 +20,7 @@
 		FAE9F6CE2D099A8E009EB5B1 /* DoTryCatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE9F6CD2D099A8E009EB5B1 /* DoTryCatch.swift */; };
 		FAE9F6D02D099A8F009EB5B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAE9F6CF2D099A8F009EB5B1 /* Assets.xcassets */; };
 		FAE9F6D32D099A8F009EB5B1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAE9F6D22D099A8F009EB5B1 /* Preview Assets.xcassets */; };
+		FAEAB3492D177841000B1507 /* AsyncPublisherScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEAB3482D177841000B1507 /* AsyncPublisherScreen.swift */; };
 		FAF008992D16233400A9C752 /* SendableScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF008982D16233400A9C752 /* SendableScreen.swift */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,7 @@
 		FAE9F6CD2D099A8E009EB5B1 /* DoTryCatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoTryCatch.swift; sourceTree = "<group>"; };
 		FAE9F6CF2D099A8F009EB5B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAE9F6D22D099A8F009EB5B1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FAEAB3482D177841000B1507 /* AsyncPublisherScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncPublisherScreen.swift; sourceTree = "<group>"; };
 		FAF008982D16233400A9C752 /* SendableScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendableScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,6 +81,7 @@
 				FA181F0D2D0F91CA001D2631 /* StructClassActorScreen.swift */,
 				FA8B5BC22D15752700237FA5 /* GlobalActorosScreen.swift */,
 				FA29D4482D0A4D6400448612 /* DownloadImageAsync.swift */,
+				FAEAB3482D177841000B1507 /* AsyncPublisherScreen.swift */,
 				FA02E70C2D0CEBF500AF7D9D /* TaskGroupScreen.swift */,
 				FAF008982D16233400A9C752 /* SendableScreen.swift */,
 				FAE9F6CD2D099A8E009EB5B1 /* DoTryCatch.swift */,
@@ -176,6 +179,7 @@
 				FA181F0E2D0F91CA001D2631 /* StructClassActorScreen.swift in Sources */,
 				FA02E70D2D0CEBF500AF7D9D /* TaskGroupScreen.swift in Sources */,
 				FA34A9102D13870900BB74BE /* ActorsScreen.swift in Sources */,
+				FAEAB3492D177841000B1507 /* AsyncPublisherScreen.swift in Sources */,
 				FAF008992D16233400A9C752 /* SendableScreen.swift in Sources */,
 				FA8533062D0B9EE200F89F6D /* TaskScreen.swift in Sources */,
 				FAE9F6CC2D099A8E009EB5B1 /* SwiftConcurrencyApp.swift in Sources */,
