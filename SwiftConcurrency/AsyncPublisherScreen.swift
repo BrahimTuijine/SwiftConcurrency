@@ -6,9 +6,8 @@
 //
 
 import SwiftUI
-import Combine
 
-class AsyncPublisherDataManager {
+actor AsyncPublisherDataManager {
     
     @Published var data: [String] = []
     
@@ -27,7 +26,6 @@ class AsyncPublisherViewModel: ObservableObject {
     
     @MainActor @Published var dataArray: [String] = []
     let manager = AsyncPublisherDataManager()
-    var cancellables = Set<AnyCancellable>()
     
     init()  {
          addSubscribers()
@@ -36,7 +34,7 @@ class AsyncPublisherViewModel: ObservableObject {
     func addSubscribers() -> Void {
         
         Task {
-            for await value in manager.$data.values {
+            for await value in await manager.$data.values {
                 await MainActor.run {
                     self.dataArray = value
                 }
