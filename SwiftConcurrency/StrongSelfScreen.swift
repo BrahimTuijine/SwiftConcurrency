@@ -15,12 +15,17 @@ final class StrongSelfDataService {
 
 final class StrongSelfViewModel: ObservableObject {
     
-    @Published var data: String = "some title !"
+   @MainActor @Published var data: String = "some title !"
     
     private let dataService = StrongSelfDataService()
     
+    // this implies a strong reference
     func updateData() async {
-        self.data = await dataService.getData()
+        let data = await dataService.getData()
+        
+        await MainActor.run {
+            self.data = data
+        }
     }
 }
 
