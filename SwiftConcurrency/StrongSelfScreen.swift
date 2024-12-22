@@ -15,18 +15,69 @@ final class StrongSelfDataService {
 
 final class StrongSelfViewModel: ObservableObject {
     
-   @MainActor @Published var data: String = "some title !"
+    @MainActor @Published var data: String = "some title !"
     
     private let dataService = StrongSelfDataService()
     
+    private var someTask: Task<Void, Never>?
+    
+    func cancelTask() {
+        someTask?.cancel()
+        someTask = nil
+    }
+    
     // this implies a strong reference
-    func updateData() async {
-        let data = await dataService.getData()
-        
-        await MainActor.run {
-            self.data = data
+    func updateData() {
+        Task {
+            let data = await dataService.getData()
+            
+            await MainActor.run {
+                self.data = data
+            }
         }
     }
+    // this is a strong reference
+    func updateData2()  {
+        Task {
+            let data = await dataService.getData()
+            
+            await MainActor.run {
+                self.data = data
+            }
+        }
+    }
+    // this is a strong reference
+    func updateData3()  {
+        Task { [self] in
+            let data = await dataService.getData()
+            
+            await MainActor.run {
+                self.data = data
+            }
+        }
+    }
+    
+    // We dont neet to manage weak/strong
+    // We can manage the Task !
+    func updateData4() {
+        someTask = Task {
+            let data = await self.dataService.getData()
+            await MainActor.run {
+                self.data = data
+            }
+        }
+    }
+    
+    // We can manage the Task !
+    func updateData5() {
+        Task.detached {
+            let data = await self.dataService.getData()
+            await MainActor.run {
+                self.data = data
+            }
+        }
+    }
+    
 }
 
 struct StrongSelfScreen: View {
@@ -37,8 +88,11 @@ struct StrongSelfScreen: View {
         VStack {
             Text(vm.data)
         }
-        .task {
-            await vm.updateData()
+        .onAppear {
+            vm.updateData()
+        }
+        .onDisappear {
+            vm.cancelTask()
         }
             
     }
