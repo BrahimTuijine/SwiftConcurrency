@@ -11,6 +11,7 @@
 		FA181F0E2D0F91CA001D2631 /* StructClassActorScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA181F0D2D0F91CA001D2631 /* StructClassActorScreen.swift */; };
 		FA1AAC1C2D0D8D4F0059AC2B /* CheckContinuationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1AAC1B2D0D8D4F0059AC2B /* CheckContinuationScreen.swift */; };
 		FA207A3A2D19638D001239F1 /* MVVMScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA207A392D19638D001239F1 /* MVVMScreen.swift */; };
+		FA207A3C2D196BDF001239F1 /* RefreshableScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA207A3B2D196BDF001239F1 /* RefreshableScreen.swift */; };
 		FA29D4492D0A4D6400448612 /* DownloadImageAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA29D4482D0A4D6400448612 /* DownloadImageAsync.swift */; };
 		FA34A9102D13870900BB74BE /* ActorsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA34A90F2D13870900BB74BE /* ActorsScreen.swift */; };
 		FA8533062D0B9EE200F89F6D /* TaskScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8533052D0B9EE200F89F6D /* TaskScreen.swift */; };
@@ -31,6 +32,7 @@
 		FA181F0D2D0F91CA001D2631 /* StructClassActorScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructClassActorScreen.swift; sourceTree = "<group>"; };
 		FA1AAC1B2D0D8D4F0059AC2B /* CheckContinuationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckContinuationScreen.swift; sourceTree = "<group>"; };
 		FA207A392D19638D001239F1 /* MVVMScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMScreen.swift; sourceTree = "<group>"; };
+		FA207A3B2D196BDF001239F1 /* RefreshableScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshableScreen.swift; sourceTree = "<group>"; };
 		FA29D4482D0A4D6400448612 /* DownloadImageAsync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadImageAsync.swift; sourceTree = "<group>"; };
 		FA34A90F2D13870900BB74BE /* ActorsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorsScreen.swift; sourceTree = "<group>"; };
 		FA8533052D0B9EE200F89F6D /* TaskScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskScreen.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				FAEAB3482D177841000B1507 /* AsyncPublisherScreen.swift */,
 				FA207A392D19638D001239F1 /* MVVMScreen.swift */,
 				FA02E70C2D0CEBF500AF7D9D /* TaskGroupScreen.swift */,
+				FA207A3B2D196BDF001239F1 /* RefreshableScreen.swift */,
 				FAF008982D16233400A9C752 /* SendableScreen.swift */,
 				FAE9F6CD2D099A8E009EB5B1 /* DoTryCatch.swift */,
 				FA34A90F2D13870900BB74BE /* ActorsScreen.swift */,
@@ -178,6 +181,7 @@
 			files = (
 				FAA56D142D0C80720011FF02 /* AsyncLetScreen.swift in Sources */,
 				FA1AAC1C2D0D8D4F0059AC2B /* CheckContinuationScreen.swift in Sources */,
+				FA207A3C2D196BDF001239F1 /* RefreshableScreen.swift in Sources */,
 				FAC95E5C2D0B32D100789C7B /* AsyncAwaitBootcamp.swift in Sources */,
 				FAE9F6CE2D099A8E009EB5B1 /* DoTryCatch.swift in Sources */,
 				FA8B5BC32D15752700237FA5 /* GlobalActorosScreen.swift in Sources */,
