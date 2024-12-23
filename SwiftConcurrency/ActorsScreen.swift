@@ -59,8 +59,8 @@ struct HomeView: View {
                 .font(.headline)
         }
         .onAppear {
-            let newString = dataManager.getSavedData()
-            let randomVar = dataManager.myRandomText
+            _ = dataManager.getSavedData()
+            _ = dataManager.myRandomText
         }
         .onReceive(timer, perform: {  _ in
             

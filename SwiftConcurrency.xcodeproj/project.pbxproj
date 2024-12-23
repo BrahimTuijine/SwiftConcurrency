@@ -10,6 +10,7 @@
 		FA02E70D2D0CEBF500AF7D9D /* TaskGroupScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA02E70C2D0CEBF500AF7D9D /* TaskGroupScreen.swift */; };
 		FA181F0E2D0F91CA001D2631 /* StructClassActorScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA181F0D2D0F91CA001D2631 /* StructClassActorScreen.swift */; };
 		FA1AAC1C2D0D8D4F0059AC2B /* CheckContinuationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1AAC1B2D0D8D4F0059AC2B /* CheckContinuationScreen.swift */; };
+		FA207A3A2D19638D001239F1 /* MVVMScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA207A392D19638D001239F1 /* MVVMScreen.swift */; };
 		FA29D4492D0A4D6400448612 /* DownloadImageAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA29D4482D0A4D6400448612 /* DownloadImageAsync.swift */; };
 		FA34A9102D13870900BB74BE /* ActorsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA34A90F2D13870900BB74BE /* ActorsScreen.swift */; };
 		FA8533062D0B9EE200F89F6D /* TaskScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8533052D0B9EE200F89F6D /* TaskScreen.swift */; };
@@ -29,6 +30,7 @@
 		FA02E70C2D0CEBF500AF7D9D /* TaskGroupScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskGroupScreen.swift; sourceTree = "<group>"; };
 		FA181F0D2D0F91CA001D2631 /* StructClassActorScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructClassActorScreen.swift; sourceTree = "<group>"; };
 		FA1AAC1B2D0D8D4F0059AC2B /* CheckContinuationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckContinuationScreen.swift; sourceTree = "<group>"; };
+		FA207A392D19638D001239F1 /* MVVMScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMScreen.swift; sourceTree = "<group>"; };
 		FA29D4482D0A4D6400448612 /* DownloadImageAsync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadImageAsync.swift; sourceTree = "<group>"; };
 		FA34A90F2D13870900BB74BE /* ActorsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorsScreen.swift; sourceTree = "<group>"; };
 		FA8533052D0B9EE200F89F6D /* TaskScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskScreen.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 				FAE9FD8C2D18CFA800446CBE /* StrongSelfScreen.swift */,
 				FA29D4482D0A4D6400448612 /* DownloadImageAsync.swift */,
 				FAEAB3482D177841000B1507 /* AsyncPublisherScreen.swift */,
+				FA207A392D19638D001239F1 /* MVVMScreen.swift */,
 				FA02E70C2D0CEBF500AF7D9D /* TaskGroupScreen.swift */,
 				FAF008982D16233400A9C752 /* SendableScreen.swift */,
 				FAE9F6CD2D099A8E009EB5B1 /* DoTryCatch.swift */,
@@ -181,6 +184,7 @@
 				FA29D4492D0A4D6400448612 /* DownloadImageAsync.swift in Sources */,
 				FAE9FD8D2D18CFA800446CBE /* StrongSelfScreen.swift in Sources */,
 				FA181F0E2D0F91CA001D2631 /* StructClassActorScreen.swift in Sources */,
+				FA207A3A2D19638D001239F1 /* MVVMScreen.swift in Sources */,
 				FA02E70D2D0CEBF500AF7D9D /* TaskGroupScreen.swift in Sources */,
 				FA34A9102D13870900BB74BE /* ActorsScreen.swift in Sources */,
 				FAEAB3492D177841000B1507 /* AsyncPublisherScreen.swift in Sources */,
