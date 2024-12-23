@@ -32,8 +32,21 @@ final class RestaurantManager {
 
 @MainActor
 final class SearchableVieModel: ObservableObject {
-    @Published private(set) var restaurants: [Restaurant] = []
     let restaurantManager = RestaurantManager()
+    @Published private(set) var restaurants: [Restaurant] = []
+    @Published private(set) var filtredRestaurants: [Restaurant] = []
+    @Published var searchText: String = "" {
+        didSet {
+            if searchText.isEmpty {
+                filtredRestaurants = restaurants
+            } else {
+                filtredRestaurants = restaurants.filter({
+                    $0.title.lowercased().contains(searchText.lowercased()) ||
+                    "\($0.cuisine)".lowercased().contains(searchText.lowercased())
+                })
+            }
+        }
+    }
     
     func loadRestaurants() async -> Void {
         do {
@@ -51,11 +64,19 @@ struct SearchableScreen: View {
     var body: some View {
         NavigationStack {
             List {
-                ForEach(vm.restaurants, id: \.id) { data in
+                ForEach(vm.searchText.isEmpty ?
+                        vm.restaurants :
+                        vm.filtredRestaurants,
+                        id: \.id) { data in
                     restaurantRow(restaurant: data)
                 }
                 
             }
+            .searchable(
+                text: $vm.searchText,
+                placement: .automatic,
+                prompt: Text("search restaurant")
+            )
             .navigationTitle("Restaurants")
             .task {
                 await vm.loadRestaurants()
