@@ -66,11 +66,11 @@ struct SearchableScreen: View {
             List {
                 ForEach(vm.searchText.isEmpty ?
                         vm.restaurants :
-                        vm.filtredRestaurants,
+                            vm.filtredRestaurants,
                         id: \.id) { data in
                     restaurantRow(restaurant: data)
                 }
-                
+                //                    SearchChildView()
             }
             .searchable(
                 text: $vm.searchText,
@@ -92,6 +92,15 @@ struct SearchableScreen: View {
                 .font(.caption)
             
         }
+    }
+}
+
+struct SearchChildView: View {
+    
+    @Environment(\.isSearching) private var isSearching
+    
+    var body: some View {
+        Text("Child View is searching: \(isSearching)")
     }
 }
 
