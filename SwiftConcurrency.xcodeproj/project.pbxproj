@@ -26,6 +26,7 @@
 		FAE9F6D32D099A8F009EB5B1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAE9F6D22D099A8F009EB5B1 /* Preview Assets.xcassets */; };
 		FAE9FD8D2D18CFA800446CBE /* StrongSelfScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE9FD8C2D18CFA800446CBE /* StrongSelfScreen.swift */; };
 		FAEAB3492D177841000B1507 /* AsyncPublisherScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEAB3482D177841000B1507 /* AsyncPublisherScreen.swift */; };
+		FAEB599A2D1C21E5004B13EC /* ObservableMacroScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEB59992D1C21E5004B13EC /* ObservableMacroScreen.swift */; };
 		FAF008992D16233400A9C752 /* SendableScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF008982D16233400A9C752 /* SendableScreen.swift */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +51,7 @@
 		FAE9F6D22D099A8F009EB5B1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FAE9FD8C2D18CFA800446CBE /* StrongSelfScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrongSelfScreen.swift; sourceTree = "<group>"; };
 		FAEAB3482D177841000B1507 /* AsyncPublisherScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncPublisherScreen.swift; sourceTree = "<group>"; };
+		FAEB59992D1C21E5004B13EC /* ObservableMacroScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableMacroScreen.swift; sourceTree = "<group>"; };
 		FAF008982D16233400A9C752 /* SendableScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendableScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,6 +94,7 @@
 				FA8B5BC22D15752700237FA5 /* GlobalActorosScreen.swift */,
 				FAE9FD8C2D18CFA800446CBE /* StrongSelfScreen.swift */,
 				FA29D4482D0A4D6400448612 /* DownloadImageAsync.swift */,
+				FAEB59992D1C21E5004B13EC /* ObservableMacroScreen.swift */,
 				FAEAB3482D177841000B1507 /* AsyncPublisherScreen.swift */,
 				FA207A392D19638D001239F1 /* MVVMScreen.swift */,
 				FAACF68D2D1ACFEF007A3F62 /* PhotoPickerScreen.swift */,
@@ -188,6 +191,7 @@
 				FAA56D142D0C80720011FF02 /* AsyncLetScreen.swift in Sources */,
 				FA1AAC1C2D0D8D4F0059AC2B /* CheckContinuationScreen.swift in Sources */,
 				FA207A3E2D19B083001239F1 /* SearchableScreen.swift in Sources */,
+				FAEB599A2D1C21E5004B13EC /* ObservableMacroScreen.swift in Sources */,
 				FA207A3C2D196BDF001239F1 /* RefreshableScreen.swift in Sources */,
 				FAC95E5C2D0B32D100789C7B /* AsyncAwaitBootcamp.swift in Sources */,
 				FAE9F6CE2D099A8E009EB5B1 /* DoTryCatch.swift in Sources */,
