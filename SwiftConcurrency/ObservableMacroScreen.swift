@@ -17,11 +17,9 @@ actor TitleDataBase {
     @MainActor var title: String = "starting text !"
     @ObservationIgnored let db = TitleDataBase()
     
+    @MainActor
     func updateTitle() async -> Void {
-        let msg = await db.getTitle()
-        await MainActor.run {
-            title = msg
-        }
+         title = await db.getTitle()
     }
 }
 
