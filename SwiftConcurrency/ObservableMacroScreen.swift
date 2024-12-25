@@ -18,8 +18,10 @@ actor TitleDataBase {
     @ObservationIgnored let db = TitleDataBase()
     
     @MainActor
-    func updateTitle() async -> Void {
-         title = await db.getTitle()
+    func updateTitle() -> Void {
+        Task { @MainActor in
+            title = await db.getTitle()
+        }
     }
 }
 
@@ -29,8 +31,8 @@ struct ObservableMacroScreen: View {
     
     var body: some View {
         Text(vm.title)
-            .task {
-               await vm.updateTitle()
+            .onAppear {
+                vm.updateTitle()
             }
     }
 }
